@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: CJjj8p78/7mHRePM5DnMZyn+tIGlap+DYwoS4yI70KRUlT6luMP2exvFmrTuAy04sbDe50NAw6PxtNHe1CpwUf0j/u4CDB0qI6+Vv1YnDa0nDJmI0exOKsamjbDP0JJEzYTwNJpqomSQzd0CZGa+stfA771hzMMRrwJpzF5g2HIfL2XZ1j6UpdJ+jtYfr2bm0kygydU5sklFQOWhvuFHs1sbMXY2t/K1rewGkkFd5REz18gY0x5V0FBlyvuGzBRb9tHx3vo1xXK6AQumW0PFpXQ9mmOkg8liKUIQ2uaLyTcmdvN4hn+5XkqNct5XhlPLbOjc6gKUctsUvWce/SODNsPdM65/UYuZGvVmnJXUbnVazWr9gsOXbtBlKLI5V9RvZKxZgZBPA1CM4zjQnrQTUXWctvVAwWw69qBAfFDU3ifvGoOqw93Zp2MOCDpX4hxDvRGmcpGpWxn5sg3QDFKQsE1LrzJlGSkfR7S5a9j8gIVqQJhjyAdUse/pSr/pPMsv+2r72+NYTIHikMoGAyglvFT5TlR/ZnCi2GRkLetFGSdagh60jsHTonc+PJmBghaXT8o/HI/dey4ueoJr1E4KbJOU+dKcB4kOyi80AaH/IYXqzuDP14hXeuNNo0IjBvuY18vHYCne7rj+NmHqTir/L9v4t7OKKvbl/PjTflF8QzE=
+  app: cicd-ei17
+  on:
+    repo: thinkful-ei17/cicd-node-restaurants-app-mongoose
