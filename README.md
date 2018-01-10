@@ -4,7 +4,6 @@
 
 ## Setup Continuous Integration with Travis CI
 
-
 **Make sure your repo is ready to go**
 On your local machine:
 - Run `npm test` to ensure tests are working correctly locally
