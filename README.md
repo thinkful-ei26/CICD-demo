@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/thinkful-ei17/cicd-node-restaurants-app-mongoose.svg?branch=master)](https://travis-ci.org/thinkful-ei17/cicd-node-restaurants-app-mongoose)
+
 # Travis and Heroku CICD setup in a nutshell
 
 [Also available in a Gist](https://gist.github.com/cklanac/789e902b2f03963fabaf9032f35b19d7)
