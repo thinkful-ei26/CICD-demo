@@ -1,15 +1,13 @@
 'use strict';
 
-const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
 
 const { PORT, DATABASE_URL } = require('./config');
 const { Restaurant } = require('./models');
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.json({message: 'hello world!!!'});
@@ -57,7 +55,6 @@ app.post('/restaurants', (req, res) => {
       res.status(500).json({ message: 'Internal server error' });
     });
 });
-
 
 app.put('/restaurants/:id', (req, res) => {
   if (!(req.params.id && req.body.id && req.params.id === req.body.id)) {

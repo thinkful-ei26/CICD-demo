@@ -13,6 +13,7 @@ const seedData = require('./seedData');
 
 chai.use(chaiHttp);
 describe('Restaurants API resource', function () {
+
   before(function () {
     return runServer(TEST_DATABASE_URL);
   });
@@ -25,7 +26,7 @@ describe('Restaurants API resource', function () {
   });
 
   afterEach(function () {
-    // return mongoose.connection.dropDatabase();
+    return mongoose.connection.dropDatabase();
   });
 
   after(function () {
@@ -40,10 +41,6 @@ describe('Restaurants API resource', function () {
         .then(function (res) {
           res.should.have.status(200);
           res.body.restaurants.should.have.length.of.at.least(1);
-          return Restaurant.count().then(function (count) {
-
-            res.body.restaurants.should.have.length.of(count);
-          });
         });
     });
 
