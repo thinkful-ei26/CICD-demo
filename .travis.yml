@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: Y5GFoHW8Q6Jc9fXseHdj8zDlSYbbQLlfqmSXmncEnJWyBbhNIsQAlXNAQcEbzoUqTBvBvvNRXIWyonF9mr0fT29KzXTQcQVmwW2lBCpC4iOA8VkBkq5mNkm2K6Du/4XyovaioIQph1xSKmrB5bvKTVd5w5NyprchRI4smWQxsUWJ6wjSvjP9tk1m/E3AshQRgJxJn0qIXJlLhTsO/nOi8QB37L7d+Gv145r61jHQ4CbSz+79QZiD0gG1mvnM1GpUAYD+jTsm/+0oHiNf7xvtwKvcliAk7GIUKH5FbxZT2H90MGtOAo8QhC6HyZRJwjfRwxZ526poQJranj+5iageHxygczCPHpzmwS9RTlbhjHKvxbfinjCPX/okBzLT3wBbtP1FDUNJDyrXx9wL+e6uSEn7XpgI1wpz7Vz/kEQUJHl/7S5mEBc4x4uMosDktTcu2ewAMsNfWb5YPj/812C/g7wNZa/GVIARnjHQ/XiSsSvQ8lmJDZl98Y+Rm3IZwLhBv16syFCS7y+zyfdDg6wo8j0R7DQegwwqbEKp2sK3t1EnOzjnmLKEzJCOep31uycqtISDdniqidM4+d82CKSrntRy9C6k1tAL964qp4x4sweXn7pH837o5CdqL40LpgnPT2hdxhQQsjRminfS7cRgDYdGE87ismSyK4rmla/gJsY=
+  app: nameless-ridge-32674
+  on:
+    repo: thinkful-ei21/CICD-demo
