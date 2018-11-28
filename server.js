@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({message: 'hello world!!!'});
+  res.json({message: 'Hello EI26!'});
 });
 
 app.get('/restaurants', (req, res) => {
