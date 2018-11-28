@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: hjErJK5Kb/tC4D6RZ8Qrnb+OnQOPO524taxUHqoN4GMLmqJuBYKoetzDXE8C1p6bo9ea0mPT/FoTanQQq7TMwJSkKMxaZBw3m+TDZnU4i4FBaP1XVrjgbI5uM9cnvfXLNKFoBS0WqTvUt9ybnSSxGngzd8mjdrKKAHJPcj4h/PugjB/G590Bw3rtSCBAwDfJWOc2GmWApaTNzyaoeTY2GMaAtfr45/SsZQPhO4hOUMJeSdgOCyAv6TAb0K4/8i/JDghk4pITMsjAEFe26/+ydvAJF13T8lDSGQHx0ZnGsN60nCY+EZIvZN6/KCSqfoeRS56Kpc2Bz1B931pnzVEPNqNCVNtU4w9rN+nScK5sgKwpNRJsY+JyJ1O004jpr2cgoIS9cUoLUQJ557CehU0woaQ7rlf7+5Scy0vkiyjot7cZUxNrDwzsX3bhrvekP2ZCRwZac55hj14+d0sF0lJgJQM5YNH1GyVwlOob3KeHDtu2GdzOfCaO5bI3dVtgL03KpbWej7qM7w/Bg7ym7ve9lnHgG0NA47jkCWZV4jDqCWCrNbhev5pYLr76PCyNO9CUDvOCxu9TufK/xikol6u9SxI4RJ5SOjkdxDS4MOYT6RUMlqLuJNdvHUKsbG0OxVsTd/zjLoM9padXwi9gsh0TcPm72129jyAaeH1LNL0eSO4=
+  app: cicd-demo-ei26
+  on:
+    repo: thinkful-ei26/CICD-demo
